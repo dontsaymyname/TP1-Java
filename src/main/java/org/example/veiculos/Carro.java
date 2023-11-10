@@ -7,6 +7,8 @@ import org.example.motores.Motor;
 
 @AllArgsConstructor
 public class Carro {
+
+    public String name;
     private Motor motor;
     private TanqueCombustivel tanqueCombustivel;
 
@@ -16,9 +18,9 @@ public class Carro {
         boolean tanqueVazio = tanqueCombustivel.estaVazio();
 
         if(motorPreparado && !tanqueVazio){
-            System.out.print("Carro ligado com sucesso!");
+            System.out.println(name  + " ligado com sucesso!");
         } else {
-            System.out.print("O carro está com algum problema!");
+            System.out.println(name + " está com algum problema!");
         }
     }
 
