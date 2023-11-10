@@ -10,8 +10,13 @@ public class App
     {
         MotorCombustao motorCombustao = new MotorCombustao();
         TanqueCombustivel tanqueCombustivel = new TanqueCombustivel(50);
-        Carro carro = new Carro(motorCombustao, tanqueCombustivel);
+        Carro carro = new Carro("HB20", motorCombustao, tanqueCombustivel);
+
+        MotorCombustao motorCombustao2 = new MotorCombustao();
+        TanqueCombustivel tanqueCombustivel2 = new TanqueCombustivel(50);
+        Carro carro2 = new Carro("Camaro", motorCombustao2, tanqueCombustivel2);
 
         carro.ligarCarro();
+        carro2.ligarCarro();
     }
 }
